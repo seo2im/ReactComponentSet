@@ -70,7 +70,7 @@ elem.addEventListener('event', throttle(callback, 300))
 
 throttle은 사용자 경험측면에서 유리하고 debounce는 리소스 측면에서 유리하다.
 
-### intersecionObserver
+### intersectionObserver
 
 최신 브라우저에서 사용될 수 있는 기술로 특정 오브젝트가 화면에 드러났는가를 판단하는 observer의 역할을 한다. 
 
@@ -85,3 +85,7 @@ observer.observe(elems)
 ```
 
 등록된 elem들은 observer에 의해 화면의 표시 여부를 담은 오브젝트로 변환되어 callback에서 실행된다.
+
+### React intersectionObserver
+
+Observer에 observe되는 대상은 ref로 설정되어야 한다. 등록은 useEffect로 등록하고 return으로 해제한다.
