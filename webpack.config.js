@@ -21,9 +21,14 @@ module.exports = {
             },
         ]
     },
+    devServer : {
+		historyApiFallback : true,
+		contentBase : path.join(__dirname, 'dist'),
+		port : 4000,
+	},
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html')
         })
-    ]
+    ],
 }
