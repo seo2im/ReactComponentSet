@@ -6,7 +6,7 @@ const dummyData: any[] = [
     { context: 'have some problem', explain: 'this explain' },
 ]
 
-type Props = {
+type ContextItemProps = {
     data: any
     idx: number
     last: boolean
@@ -14,7 +14,7 @@ type Props = {
     setOpen: (idx: number) => void
 }
 const ContextItem
-= ({ data, idx, last, open, setOpen } : Props) => {
+= ({ data, idx, last, open, setOpen } : ContextItemProps) => {
     const OpenMenu = (e: React.MouseEvent) => {
         e.stopPropagation()
         setOpen(idx === open ? -1 : idx)
