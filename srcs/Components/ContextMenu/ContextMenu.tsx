@@ -25,13 +25,13 @@ const ContextItem
             <Context>{data.context}</Context>
             <Menu isOpen={open === idx}>{data.explain}</Menu>
         </ContextBox>
-)
+    )
 }
 
-const ContextMenu = () => {
+const ContextMenu: React.FC = () => {
     const [open, setOpen] = useState<number>(-1)
     
-    const CloseMenu = (e: Event) => {
+    const CloseMenu = () => {
         setOpen(-1)
     }
     useEffect(() => {
