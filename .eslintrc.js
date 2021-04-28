@@ -30,5 +30,6 @@ module.exports = {
     "rules": {
         "@typescript-eslint/no-explicit-any": 0,
         "react/prop-types": 0,
+        "react/display-name": 0,
     }
 };

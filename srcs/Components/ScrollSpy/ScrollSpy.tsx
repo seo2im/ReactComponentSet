@@ -33,7 +33,6 @@ const Content = React.forwardRef<HTMLDivElement, ContentProps>(({ content }, ref
         </ContentDiv>
     )
 })
-Content.displayName = 'Content' /* For linting rule... is need? */
 
 /*
     IntersectionObserver 
