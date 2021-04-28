@@ -33,11 +33,12 @@ const Content = React.forwardRef<HTMLDivElement, ContentProps>(({ content }, ref
         </ContentDiv>
     )
 })
+Content.displayName = 'Content' /* For linting rule... is need? */
 
 /*
     IntersectionObserver 
 */
-const ScrollSpy = () => {
+const ScrollSpy: React.FC = () => {
     const [idx, setIdx] = useState<number>(0)
     const ref = useRef<any[]>([])
 
