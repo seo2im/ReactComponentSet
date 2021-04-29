@@ -1,2 +1,2 @@
 export { default as GlobalStyle } from './GlobalStyle'
-export { default as theme } from './ThemeStyle'
+export { default as Theme } from './ThemeStyle'

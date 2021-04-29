@@ -29,3 +29,8 @@ setTimeout(() => {
 ### toggle(string, [ option ])
 
 `option`은 해당 요소가 true일 때 리스트를 추가한다.
+
+### Typescript Object key type setting
+```typescript
+const object: {[key : type] : type}
+```
