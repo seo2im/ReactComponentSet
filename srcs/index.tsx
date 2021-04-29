@@ -33,11 +33,11 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route exact path='/' component={main} />
-                    {Components.map((e, i) => {
+                    {Components.map((e, i) => (
                         <Route key={`route_${i}`}  path={`/${e.name}`}>
                             <e.comp />
                         </Route>
-                    })}
+                    ))}
                     <Route path={`/DarkMode`}>
                         <DarkMode changeTheme={changeTheme} />
                     </Route>

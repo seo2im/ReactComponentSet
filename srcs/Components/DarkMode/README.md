@@ -34,3 +34,6 @@ setTimeout(() => {
 ```typescript
 const object: {[key : type] : type}
 ```
+
+### TODO
+1. hook state lazy loading when it use localStorage

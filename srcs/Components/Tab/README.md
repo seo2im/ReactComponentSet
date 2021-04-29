@@ -21,3 +21,6 @@ css요소도 `--valueName`을 통해 값을 지정한 후 이를 `calc` 내부�
 ### fetching custom hook(React)
 
 useEffect내부에서 async를 구현하려면 IIFE를 이용하여 구성한다. 통상 pending상태에선 `isLoading`을 true로 두는 state를 구성하고 반환된 데이터는 promise가 반환된 수 값을 할당하는 식이다. 
+
+### z-index
+위치의 상위 포지션으로의 이동을 관련한다.
