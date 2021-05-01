@@ -5,8 +5,9 @@ import DarkMode from './DarkMode/DarkMode'
 import StopWatch from './StopWatch/StopWatch'
 import Tab from './Tab/Tab'
 import AnalogClock from './AnalogClock/AnalogClock'
+import Carousel from './Carousel/Carousel'
 
-export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock }
+export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel }
 export default [
     { name: 'ContextMenu', comp: ContextMenu },
     { name: 'ScrollSpy', comp: ScrollSpy },
@@ -14,4 +15,5 @@ export default [
     { name: 'StopWatch',  comp: StopWatch },
     { name: 'Tab', comp: Tab },
     { name: 'AnalogClock', comp: AnalogClock },
+    { name: 'Carousel', comp: Carousel },
 ]

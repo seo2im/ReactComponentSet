@@ -28,3 +28,8 @@ element.ontransitionend = () => {
 ### static file with loader
 
 url loader vs file loader
+
+### cursor<css>
+
+요소 위에 마우스가 올라갔을 때 표시를 지정
+
