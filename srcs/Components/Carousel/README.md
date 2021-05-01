@@ -24,3 +24,12 @@ element.ontransitionend = () => {
 ### react component event handler
 
 기본적으로 모든 이벤트 핸들러는 JSX 컴포넌트에 등록하여 사용할 수 있다. 즉, vanila로 작성된 함수를 모두 동일하게 구성할 수 있다.
+
+### static file with loader
+
+url loader vs file loader
+
+### cursor<css>
+
+요소 위에 마우스가 올라갔을 때 표시를 지정
+

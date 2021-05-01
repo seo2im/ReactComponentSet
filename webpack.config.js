@@ -19,11 +19,15 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader',
             },
+            {
+                test: /\.png$/,
+                loader: 'url-loader'
+            }
         ]
     },
     devServer : {
-		historyApiFallback : true,
-		contentBase : path.join(__dirname, 'dist'),
+        historyApiFallback : true,
+        contentBase : path.join(__dirname, '/public'),
 		port : 4000,
 	},
     plugins: [

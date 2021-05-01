@@ -31,5 +31,6 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": 0,
         "react/prop-types": 0,
         "react/display-name": 0,
-    }
-};
+    },
+    "ignorePatterns": ['.eslint.js', 'webpack.config.js']
+}
