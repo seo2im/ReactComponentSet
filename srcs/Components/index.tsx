@@ -6,8 +6,9 @@ import StopWatch from './StopWatch/StopWatch'
 import Tab from './Tab/Tab'
 import AnalogClock from './AnalogClock/AnalogClock'
 import Carousel from './Carousel/Carousel'
+import ToggleButton from './ToggleButton/ToggleButton'
 
-export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel }
+export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel, ToggleButton }
 export default [
     { name: 'ContextMenu', comp: ContextMenu },
     { name: 'ScrollSpy', comp: ScrollSpy },
@@ -16,4 +17,5 @@ export default [
     { name: 'Tab', comp: Tab },
     { name: 'AnalogClock', comp: AnalogClock },
     { name: 'Carousel', comp: Carousel },
+    { name: 'ToggleButton', comp: ToggleButton },
 ]
