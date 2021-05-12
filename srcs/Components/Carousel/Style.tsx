@@ -23,7 +23,7 @@ export const Card = styled.div<{ width: number, height: number, color: string }>
     
     background-color: ${({ color }) => color};
 `
-export const Controller = styled.button<{ position: string}>`
+export const Controller = styled.button<{ position: string }>`
     position: absolute;
     top: calc(50% - 2.5rem);
     ${({ position }) => position}: 0;
