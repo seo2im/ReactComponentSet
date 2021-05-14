@@ -11,8 +11,11 @@ import ChipsUi from './ChipsUI/ChipsUI'
 import DropdownMenu from './DropdownMenu/DropdownMenu'
 import AutoComplete from './AutoComplete/AutoComplete'
 import Modal from './Modal/Modal'
+import Progressbar from './Progressbar/Progressbar'
 
-export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel, ToggleButton, ChipsUi, DropdownMenu, AutoComplete, Modal }
+export { ContextMenu, ScrollSpy, LoadScroll, DarkMode,
+    StopWatch, AnalogClock, Carousel, ToggleButton, ChipsUi,
+    DropdownMenu, AutoComplete, Modal, Progressbar }
 
 export default [
     { name: 'ContextMenu', comp: ContextMenu },
@@ -27,4 +30,5 @@ export default [
     { name: 'DropdownMenu', comp: DropdownMenu },
     { name: 'AutoComplete', comp: AutoComplete },
     { name: 'Modal', comp: Modal },
+    { name: 'Progressbar', comp: Progressbar },
 ]
