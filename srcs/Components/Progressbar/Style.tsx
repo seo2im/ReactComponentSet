@@ -17,5 +17,5 @@ export const Bar = styled.div<{ percent: number }>`
     
     background:green;
 
-    transition: width 0.5s ease-out;
+    transition: width 0.5s;
 `

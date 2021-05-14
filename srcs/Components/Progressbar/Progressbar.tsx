@@ -1,11 +1,10 @@
 import React, { useState, useRef } from 'react'
 import { Div, Bar } from './Style'
 
-const Progressbar: React.FC = () => {
-    const [percent, setPercent] = useState<number>(25)
+const useBar = (range :number): [number, () => Promise<void>, () => Promise<void>] => {
+    const [percent, setPercent] = useState<number>(0)
     const isLoading = useRef<boolean>(false)
 
-    /* 지연 함수 */
     const delay = (delay: number) => {
         isLoading.current = true
         return new Promise(() => {
@@ -16,15 +15,24 @@ const Progressbar: React.FC = () => {
     const UP = async () => {
         if (isLoading.current) return
         if (percent == 100) return
-        setPercent(percent + 25)
+        const value = percent + range
+        setPercent(value >= 100 ? 100 : value)
         await delay(500)
     }
+
     const DOWN = async () => {
         if (isLoading.current) return
         if (percent == 0) return
-        setPercent(percent - 25)
+        const value = percent - range
+        setPercent(value <= 0 ? 0 : value)
         await delay(500)
     }
+
+    return [percent, UP, DOWN]
+}
+
+const Progressbar: React.FC = () => {
+    const [percent, UP, DOWN] = useBar(25)
 
 
     return (
