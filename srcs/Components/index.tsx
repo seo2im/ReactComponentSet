@@ -9,8 +9,9 @@ import Carousel from './Carousel/Carousel'
 import ToggleButton from './ToggleButton/ToggleButton'
 import ChipsUi from './ChipsUI/ChipsUI'
 import DropdownMenu from './DropdownMenu/DropdownMenu'
+import AutoComplete from './AutoComplete/AutoComplete'
 
-export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel, ToggleButton, ChipsUi, DropdownMenu }
+export { ContextMenu, ScrollSpy, LoadScroll, DarkMode, StopWatch, AnalogClock, Carousel, ToggleButton, ChipsUi, DropdownMenu, AutoComplete }
 export default [
     { name: 'ContextMenu', comp: ContextMenu },
     { name: 'ScrollSpy', comp: ScrollSpy },
@@ -22,4 +23,5 @@ export default [
     { name: 'ToggleButton', comp: ToggleButton },
     { name: 'ChipsUi', comp: ChipsUi },
     { name: 'DropdownMenu', comp: DropdownMenu },
+    { name: 'AutoComplete', comp: AutoComplete },
 ]
