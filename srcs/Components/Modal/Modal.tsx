@@ -6,16 +6,12 @@ const Modal: React.FC = () => {
     const [overlay, setOverlay] = useState<boolean>(false)
 
     return (
+        <>
         <Background open={open} onClick={() => {
                 if (overlay) return
                 setOpen(0)
             }}>
-            <Button onClick={(e) => {
-                    e.stopPropagation()                
-                    setOpen(open => 1 - open)
-                }}>
-                Modal open
-            </Button>
+            
             <ModalDiv 
                 open={open}
                 onMouseOver={() => setOverlay(true)}
@@ -23,6 +19,13 @@ const Modal: React.FC = () => {
                 This is Modal
             </ModalDiv>
         </Background>
+        <Button onClick={(e) => {
+                    e.stopPropagation()                
+                    setOpen(open => 1 - open)
+                }}>
+                Modal open
+        </Button>
+        </>
     )
 }
 
