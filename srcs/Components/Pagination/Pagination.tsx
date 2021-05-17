@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Div, Items, Item, Button } from './Style'
 import { fetchLength, fetchArray } from './fetchData';
 
-const Pagination: React.FC = () => {
+const usePagination = (): [number, (idx: number) => void, string[], number, boolean] => {
     const [pageNum, setPageNum] = useState<number>(5)
     const [length, setLength] = useState<number>(0)
     const [idx, setIdx] = useState<number>(0)
@@ -26,6 +26,12 @@ const Pagination: React.FC = () => {
     useEffect(() => {
         nextPaging()
     }, [idx])
+    
+    return [idx, setIdx, items, length, loading]
+}
+
+const Pagination: React.FC = () => {
+    const [idx, setIdx, items, length, loading] = usePagination()
 
     return (
         <Div>
