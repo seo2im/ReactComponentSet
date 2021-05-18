@@ -12,10 +12,12 @@ import DropdownMenu from './DropdownMenu/DropdownMenu'
 import AutoComplete from './AutoComplete/AutoComplete'
 import Modal from './Modal/Modal'
 import Progressbar from './Progressbar/Progressbar'
+import Pagination from './Pagination/Pagination'
 
 export { ContextMenu, ScrollSpy, LoadScroll, DarkMode,
     StopWatch, AnalogClock, Carousel, ToggleButton, ChipsUi,
-    DropdownMenu, AutoComplete, Modal, Progressbar }
+    DropdownMenu, AutoComplete, Modal, Progressbar,
+    Pagination }
 
 export default [
     { name: 'ContextMenu', comp: ContextMenu },
@@ -31,4 +33,5 @@ export default [
     { name: 'AutoComplete', comp: AutoComplete },
     { name: 'Modal', comp: Modal },
     { name: 'Progressbar', comp: Progressbar },
+    { name: 'Pagination', comp: Pagination },
 ]
